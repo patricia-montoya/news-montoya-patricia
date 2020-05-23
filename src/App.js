@@ -1,11 +1,15 @@
 import React from 'react';
 import GlobalStyles from './theme/globalStyles';
+import Layout from './components/Layout';
+import Card from './components/Card';
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <div className="App"> Cleaning up the project </div>
+      <Layout>
+        <Card></Card>
+      </Layout>
     </>
   );
 }
