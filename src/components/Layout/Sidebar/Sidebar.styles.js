@@ -3,9 +3,10 @@ import { setColor } from '../../../theme';
 
 const SidebarContainer = styled.aside`
   position: fixed;
-  width: 12vw;
+  width: 250px;
   height: 100vh;
-  background-color: ${setColor.lightBlack};
+  background-color: ${setColor.secondaryBlack};
+  color: ${setColor.mainWhite};
 `;
 
 export default SidebarContainer;

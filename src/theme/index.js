@@ -1,6 +1,6 @@
 export const setColor = {
   mainBlack: '#000000',
-  secondaryBlack: '#222222',
+  secondaryBlack: '#212121',
   lightBlack: '#444444',
   mainWhite: '#ffffff',
   secondaryWhite: '#eeeeee',

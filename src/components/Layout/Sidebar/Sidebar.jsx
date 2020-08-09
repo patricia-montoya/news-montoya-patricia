@@ -4,10 +4,11 @@ import SidebarContainer from './Sidebar.styles';
 const Sidebar = () => {
   return (
     <SidebarContainer>
-      <h2>Something</h2>
-      <h2>Something</h2>
-      <h2>Something</h2>
-      <h2>Something</h2>
+      <h4>Something</h4>
+      <h4>Something</h4>
+      <h4>Something</h4>
+      <h4>Something</h4>
+      <h4>Something</h4>
     </SidebarContainer>
   );
 };
