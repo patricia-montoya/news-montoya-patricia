@@ -1,7 +1,7 @@
 import React from 'react';
-import CardContainer from './Card.styles.js';
+import CardContainer from './NewsCard.styles.js';
 
-const Card = () => {
+const NewsCard = () => {
   return (
     <CardContainer>
       <div>Imagen</div>
@@ -11,4 +11,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default NewsCard;

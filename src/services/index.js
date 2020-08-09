@@ -2,6 +2,7 @@ import axios from 'axios';
 const BASE_URL = 'https://api.canillitapp.com';
 
 export const getLatestNews = (date) => {
+  console.log(date);
   return axios.get(`${BASE_URL}/latest/${date}`);
 };
 
