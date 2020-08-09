@@ -10,13 +10,12 @@ class Home extends React.Component {
   render() {
     const { data, isFetching, error } = this.props.news;
 
-    console.log(isFetching);
-    console.log(data);
-
     return (
       <>
         {data.data !== undefined ? (
-          data.data.slice(0, 10).map((item) => <NewsCard />)
+          data.data
+            .slice(0, 10)
+            .map((item, index) => <NewsCard key={index} data={item} />)
         ) : (
           <h1>Cargando News</h1>
         )}

@@ -1,12 +1,37 @@
 import React from 'react';
-import CardContainer from './NewsCard.styles.js';
+import { timestampToDate } from '../../utils';
+import ImageNotFound from '../../assets/ImageNotFound.png';
+import {
+  CardContainer,
+  Image,
+  InfoContainer,
+  Title,
+  Date,
+  Source,
+} from './NewsCard.styles.js';
 
-const NewsCard = () => {
+const NewsCard = (props) => {
+  const { img_url, title, url, source_name, date } = props.data;
+  console.log(img_url);
+  console.log(timestampToDate(date));
+
   return (
     <CardContainer>
-      <div>Imagen</div>
-      <div>data</div>
-      <div>Footer</div>
+      {img_url === null ? (
+        <Image src={ImageNotFound} alt={title} />
+      ) : (
+        <Image src={img_url} alt={title} />
+      )}
+      <InfoContainer>
+        <Title>{title}</Title>
+        <Date>{timestampToDate(date)}</Date>
+        <Source>
+          <a href={url} className="linkToSource">
+            {`Leer más en `}
+            <strong>{source_name}</strong>
+          </a>
+        </Source>
+      </InfoContainer>
     </CardContainer>
   );
 };
