@@ -8,7 +8,7 @@ import {
   Title,
   Date,
   Source,
-} from './NewsCard.styles.js';
+} from './NewsCard.style';
 
 const NewsCard = (props) => {
   const { img_url, title, url, source_name, date } = props.data;

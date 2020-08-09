@@ -1,7 +1,7 @@
 import React from 'react';
 import Topbar from './Topbar';
 import Sidebar from './Sidebar';
-import ContentContainer from './Layout.styles';
+import ContentContainer from './Layout.style';
 
 const Layout = (props) => {
   console.log(props);
