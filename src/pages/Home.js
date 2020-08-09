@@ -1,5 +1,6 @@
 import React from 'react';
 import NewsCard from '../components/NewsCard';
+import Loading from '../components/Loading';
 import { dateFormat } from '../utils';
 
 class Home extends React.Component {
@@ -8,7 +9,7 @@ class Home extends React.Component {
   }
 
   render() {
-    const { data, isFetching, error } = this.props.news;
+    const { data } = this.props.news;
 
     return (
       <>
@@ -17,7 +18,7 @@ class Home extends React.Component {
             .slice(0, 10)
             .map((item, index) => <NewsCard key={index} data={item} />)
         ) : (
-          <h1>Cargando News</h1>
+          <Loading />
         )}
       </>
     );

@@ -30,8 +30,13 @@ export const HeaderContainer = styled.div`
     color: ${setColor.mainWhite};
     padding: 5px;
     height: 40px;
-    margin-right: 12px;
+    margin: 0px 12px;
     background-color: ${setColor.mainBlue};
     border-radius: 20px;
   }
+`;
+
+export const OptionsContainer = styled.nav`
+  display: flex;
+  flex-direction: column;
 `;
